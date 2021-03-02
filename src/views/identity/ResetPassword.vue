@@ -3,7 +3,7 @@
 <template>
     <div id="container">
         <h1 id="title"><b>새로운 비밀번호 설정</b></h1>
-        <div style="text-align : center; margin-top:80px; font-size:20px" >계정의 새로운 비밀번호를 설정하세요. 비밀번호를 초기화하면 <br><b>기존의 비밀번호는 사용할 수 없게 됩니다.</b></div>
+        <div style="text-align : center; margin-top:80px; font-size:20px" >계정의 새로운 비밀번호를 설정하세요. 비밀번호를 초기화하면 <br><strong>기존의 비밀번호는 사용할 수 없게 됩니다.</strong></div>
         <div id="bigbox">
                 
             
