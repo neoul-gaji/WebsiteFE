@@ -70,17 +70,18 @@ export default {
         width: 90%;
         margin: 20px;
     }
-    /* @media(min-width:676px){
-        .card {
-            width: 400px;
-        }
-    } */
+    
     @media(min-width:992px){
         .card {
             width: 350px;
         }
     }
     
+    .card:hover {
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    }
+
+
     .card.show{
         display: inline-block;
     }
@@ -88,7 +89,22 @@ export default {
         width: 100%;
         height: 100px;
         margin-bottom: 15px;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transition: all 0.8s ease-in-out;
     }
+
+    .card-image > img:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
     img {
       width: 30px;
       height: 30px;
