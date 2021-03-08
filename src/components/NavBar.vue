@@ -5,7 +5,7 @@
         <a href="/home" class="d-inline-flex align-items-center">
           <img src="@/assets/logo.png" alt="logo" id="logo-name">
           <ul>
-            <li style="font-size: 11px;">성균관대에서</li>
+            <li style="font-size: 11px;">성균관대의</li>
             <li style="font-size: 23px;">꿈꾸는개발자들</li>
           </ul>
         </a>
@@ -13,12 +13,12 @@
         <span><a id="location" href="#">모집글작성</a></span>
       </div>
       <ul id="nav-cotainer-right" class="d-inline-flex justify-content-between align-items-center">
-          <li>대학팀원</li>
-          <li>지역팀원</li>
-          <li>멘토</li>
+          <li>팀원 찾기</li>
+          <li>멘토 찾기</li>
           <li>모집글작성</li>
           <li><b-icon icon="bell-fill" scale="1.5"></b-icon></li>
           <li><b-icon icon="person-circle" scale="1.5"></b-icon></li>
+          <li><b-icon icon="unlock-fill" scale="1.5"></b-icon></li>
       </ul>
     </nav>
   </div>
@@ -58,7 +58,7 @@ a {
 }
 
 #nav-cotainer-right {
-  width: 500px;
+  width: 450px;
 }
 
 
