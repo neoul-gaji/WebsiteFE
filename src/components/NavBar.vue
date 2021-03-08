@@ -1,48 +1,67 @@
-<template lang="">
-<div>
-  <b-navbar toggleable="lg" type="dark" variant="info">
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-    <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
-
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown right>
-          <!-- Using 'button-content' slot -->
-          <template #button-content>
-            <em>User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
-</div>
+<template lang="ko">
+  <div class="fixed-top d-flex justify-content-center align-items-center shadow-sm rounded" style="background:#f8fbfe; height:100px;">
+    <nav class="d-flex justify-content-between align-items-center m-2">
+      <div id="nav-container-left" class="d-inline-flex justify-content-between align-items-center">
+        <a href="/home" class="d-inline-flex align-items-center">
+          <img src="@/assets/logo.png" alt="logo" id="logo-name">
+          <ul>
+            <li style="font-size: 11px;">성균관대에서</li>
+            <li style="font-size: 23px;">꿈꾸는개발자들</li>
+          </ul>
+        </a>
+        <span>|</span>
+        <span><a id="location" href="#">모집글작성</a></span>
+      </div>
+      <ul id="nav-cotainer-right" class="d-inline-flex justify-content-between align-items-center">
+          <li>대학팀원</li>
+          <li>지역팀원</li>
+          <li>멘토</li>
+          <li>모집글작성</li>
+          <li><b-icon icon="bell-fill" scale="1.5"></b-icon></li>
+          <li><b-icon icon="person-circle" scale="1.5"></b-icon></li>
+      </ul>
+    </nav>
+  </div>
 </template>
 <script>
+// $(".nav").width($(window).width());
+
 export default {
     
 }
 </script>
-<style lang="">
-    
+<style scoped>
+/* css reset */
+nav {
+  padding: 10px;
+  width: 1180px;
+}
+
+ul {
+  list-style:none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  color: black;
+}
+
+
+#logo-name {
+  width: 50px;
+  height: 50px;
+}
+
+#nav-container-left {
+  width: 330px;
+}
+
+#nav-cotainer-right {
+  width: 500px;
+}
+
+
+
+
 </style>
