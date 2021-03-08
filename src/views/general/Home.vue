@@ -1,7 +1,7 @@
 <template>
 <div id="menu">
     <div class="content">
-    <div class="left-content" style="overflow:auto;background-color: #d4d4d3;position: absolute;left: 0px;height:100%;width: 50%;">
+    <div class="left-content" style="overflow:auto;background-color: #f1f3f5;position: absolute;left: 0px;height:100%;width: 50%;padding-bottom:100px">
         <br><strong style='font-size:60px'>너울가지</strong><br>
         <span style='font-size:30px'>프로그래밍을 함께<br>프로젝트는 즐겁게</span><br>
         <a href="/" class="macbook">
@@ -11,13 +11,13 @@
 
         <span style='font-size:30px'><br>더욱 발전할 당신의 프로그래밍</span><br>
 
-        <span style='font-size:30px'><br>컴퓨터학과 취업의 지름길</span>
-        <span style='font-size:30px'><br>알고리즘, CS, 학점, 그리고 <strong style='font-size:30px'>프로젝트</strong></span><br><br><br><br><br><br>
+        <span style='font-size:30px'><br>알고리즘, CS, 학점, 그리고 <strong style='font-size:30px'>프로젝트</strong></span>
 
     </div>
     <div class="aside" style="position:absolute;top:30%;margin-top:-50px;background-color: #ffffff;margin-left: 50%;width: 50%;">
 
-        <div id="login" style='line-height:300% display:table-cell vertical-align:middle'>
+        <div id="login" style='line-height:300%; '>
+            <!-- display:table-cell ;vertical-align:middle -->
             <a href="/" class="logo">    <img src="../../assets/image/logo.png" alt="neoul-gazi" width="17%"></a>
             <p style='line-height:150%'><br>
                 <strong style='font-size:60px'>너울가지</strong><br><br>
@@ -25,10 +25,10 @@
                     Hack your Lifes to Fantasy<br>Code your Dreams to Reality</span>
             </p>
             <div id="buttons" style='line-height:300%'>
-            <b-button pill="pill" :style="{width: '395px'}" variant="outline-danger" to="/login/">
+            <b-button pill="pill" :style="{width: '395px',color:'#ec4c66'}" variant="outline-danger" to="/login/">
                 <span style='font-size:19px'>로그인</span>
             </b-button><br>
-            <b-button pill="pill" :style="{width: '395px'}" variant="danger" to="/login/">
+            <b-button pill="pill" :style="{width: '395px',color:'#ffffff'}" variant="danger" to="/login/">
                 <span style='font-size:19px'>회원가입</span>
             </b-button>
             <p class="find" style='line-height:140%'><br>
@@ -58,41 +58,28 @@
 </script>
 
 <style scoped="scoped" > 
+ a:link { color: red; text-decoration: none;}
+ a:visited { color: black; text-decoration: none;}
+ a:hover { color: blue; text-decoration: underline;}
+
 #menu {
     text-align: center;
 }
 #footer-content {
-    background-color: #e9ecef;
+    background-color: #ced4da;
     height: 50px; 
     /* height + top/bottom paddding + top/bottom border must add up to footer height */
     text-align: center;
     padding: 8px;
 }
-@font-face{
-    font-family: "GBold";
-    src: url("../../assets/TTF/Bold.ttf");
-    /* font-weight: bold; */
+
+.left-content {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
-
-@font-face {
-    font-family: "GMedium";
-    src: url("../../assets/TTF/Medium.ttf");
-    /* font-weight: normal; */
+.left-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
 }
-
-
-g-medium {
-    font-family: "GMedium";
-    font-style: normal;
-    font-weight: normal;
-}
-
-g-bold {
-    font-family: "GBold";
-    font-style: normal;
-    font-weight: normal;
-}
-
 div{
     font-family: "GMedium";
 }
