@@ -25,9 +25,12 @@ export default {
 }
 </script>
 <style scoped>
+
+
 #logo-img {
     height: 100px;
 }
+
 #container {
     position: absolute;
     top:50%;

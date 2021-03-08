@@ -13,20 +13,25 @@
 </template>
 <script>
 import NavBar from '@/components/NavBar.vue'
+
 export default {
     components: {
         NavBar
     }
 }
+
 </script>
 <style scoped>
+
 #post-container {
     padding: 50px;
 }
+
 #create-post-container {
     margin-top:100px; 
     padding-top:70px;
 }
+
 #container {
     width: 880px;
     height: 1300px;

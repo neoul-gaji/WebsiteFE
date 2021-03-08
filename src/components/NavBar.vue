@@ -10,12 +10,7 @@
           </ul>
         </a>
         <span>|</span>
-        <!-- <!-- <span><slot type="location">모집글작성</slot></span> -->
-                <span><a id="location" href="#">모집글작성</a></span> 
-
-        <!-- <span><a id="location" href="#">모집글작성</a></span> slot!!! -->
-        <!-- <navigation-link url="/create-post"> <span class="fa fa-user"><a id="location" href="../create-post">모집글작성</a></span> </navigation-link>
-        <navigation-link url="/home"> <span class="fa fa-user"><a id="location" href="../home">Main Home</a></span> </navigation-link> -->
+        <span><a id="location" href="#">모집글작성</a></span>
       </div>
       <ul id="nav-cotainer-right" class="d-inline-flex justify-content-between align-items-center">
           <li>팀원 찾기</li>
@@ -27,15 +22,12 @@
       </ul>
     </nav>
   </div>
-
-  
 </template>
 <script>
 // $(".nav").width($(window).width());
+
 export default {
-    components:{
-      // navigation-link
-    }
+    
 }
 </script>
 <style scoped>
@@ -44,22 +36,32 @@ nav {
   padding: 10px;
   width: 1180px;
 }
+
 ul {
   list-style:none;
   padding-left: 0px;
   margin-bottom: 0px;
 }
+
 a {
   color: black;
 }
+
+
 #logo-name {
   width: 50px;
   height: 50px;
 }
+
 #nav-container-left {
   width: 330px;
 }
+
 #nav-cotainer-right {
   width: 450px;
 }
+
+
+
+
 </style>
