@@ -6,9 +6,9 @@
             <li><a class="card-inform">
                 <ul>
                     <li><a class="team-name set-gray">{{teamname}}</a></li>
-                    <li><a class="eye"><img src="@/assets/eye.png" alt="eye"></a></li>
+                    <li><a class="eye" style="color: black;"><b-icon icon="eye" scale="1.5"></b-icon></a></li>
                     <li><a class="eye-num set-gray">{{viewer}}</a></li>
-                    <li><a class="talk"><img src="@/assets/message.jpg" alt="talk"></a></li>
+                    <li><a class="talk" style="color: black;"><b-icon icon="card-text" scale="1.5"></b-icon></a></li>
                     <li><a class="talk-num set-gray">{{talk}}</a></li>
                 </ul>
                 </a></li><br>
@@ -18,7 +18,7 @@
             <li><a class="foot">
                 <ul>
                     <a class="time">{{time}} 시간전</a>
-                    <a class="tag"><img src="@/assets/tag.jpg" alt="tag"></a> 
+                    <a class="tag" style="color: black;"><b-icon icon="tag" scale="1.5"></b-icon></a> 
                     <!-- li로 씌우면 개별 float 안먹음 주의 -->
                 </ul>
                 </a></li>
@@ -77,7 +77,7 @@ export default {
     } */
     @media(min-width:992px){
         .card {
-            width: 400px;
+            width: 350px;
         }
     }
     
@@ -86,17 +86,16 @@ export default {
     }
     .card-image > img {
         width: 100%;
-        height: 200px;
+        height: 100px;
         margin-bottom: 15px;
     }
-
     img {
       width: 30px;
       height: 30px;
     }
     .card-inner {
         float: center;
-        margin: 40px;
+        margin: 30px;
     }
     .card-inner > li > .card-inform > ul > li {
         display: inline-block;
@@ -118,21 +117,20 @@ export default {
         margin-right: 10px;
     }
     .card-title {
-        font-size: 20px;
+        font-size: 18px;
         color: black;
     }
     .purpose {
-        font-size: 20px;
+        font-size: 18px;
         color: black;
     }
     .time {
         color: black;
-        font-size: 20px;
+        font-size: 15px;
     }
     .set-gray {
         color: rgba(0, 0, 0, 0.6);
-        font-size: 17px;
+        font-size: 15px;
     }
     
-
 </style>

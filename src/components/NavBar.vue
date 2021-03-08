@@ -1,148 +1,65 @@
 <template lang="ko">
-<div class="nav">
-  <div class="top_gnb">
-    <ul class="top-nav-left">
-        <li><a class="nwgj" href="#">NWGJ</a></li>
-        <li><a class="illusion"></a></li>
-        <li><a class="mate" href="#">메이트모집</a></li>
-    </ul>
-    <ul class="top-nav-right">
-        <li><a class="nav-top-mini" href="#"><img src="@/assets/glass.jpg" alt="glass"></a></li>
-        <li><a class="nav-top-mini" href="#"><img src="@/assets/message.jpg" alt="message"></a></li>
-        <li><a class="nav-top-mini" href="#"><img src="@/assets/bell.jpg" alt="jingle"></a></li>
-        <li><a class="nav-top-mini" href="#"><img src="@/assets/user.jpg" alt="user"></a></li>
-    </ul>
-  </div>
-  <div class="bottom_gnb">
-      <ul class="bottom-nav">
-        <li><a class="bottom-filter" href="#"><img src="@/assets/filter.png" alt="filter"></a></li>
-        <li><a class="illusion"></a></li>
-        <li><a class="bottom-location" href="#">지역 &#9660;</a></li>
-        <li><a class="illusion"></a></li>
-        <li><a class="bottom-major" href="#">분야 &#9660;</a></li>
-        <li><a class="illusion"></a></li>
-        <li><a class="bottom-date" href="#">날짜 &#9660;</a></li>
-        <li><a class="illusion"></a></li>
+  <div class="fixed-top d-flex justify-content-center align-items-center shadow-sm rounded" style="background:#f8fbfe; height:100px;">
+    <nav class="d-flex justify-content-between align-items-center m-2">
+      <div id="nav-container-left" class="d-inline-flex justify-content-between align-items-center">
+        <a href="/home" class="d-inline-flex align-items-center">
+          <img src="@/assets/logo.png" alt="logo" id="logo-name">
+          <ul>
+            <li style="font-size: 11px;">성균관대의</li>
+            <li style="font-size: 23px;">꿈꾸는개발자들</li>
+          </ul>
+        </a>
+        <span>|</span>
+        <!-- <!-- <span><slot type="location">모집글작성</slot></span> -->
+                <span><a id="location" href="#">모집글작성</a></span> 
+
+        <!-- <span><a id="location" href="#">모집글작성</a></span> slot!!! -->
+        <!-- <navigation-link url="/create-post"> <span class="fa fa-user"><a id="location" href="../create-post">모집글작성</a></span> </navigation-link>
+        <navigation-link url="/home"> <span class="fa fa-user"><a id="location" href="../home">Main Home</a></span> </navigation-link> -->
+      </div>
+      <ul id="nav-cotainer-right" class="d-inline-flex justify-content-between align-items-center">
+          <li>팀원 찾기</li>
+          <li>멘토 찾기</li>
+          <li>모집글작성</li>
+          <li><b-icon icon="bell-fill" scale="1.5"></b-icon></li>
+          <li><b-icon icon="person-circle" scale="1.5"></b-icon></li>
+          <li><b-icon icon="unlock-fill" scale="1.5"></b-icon></li>
       </ul>
+    </nav>
   </div>
-</div>
+
+  
 </template>
 <script>
 // $(".nav").width($(window).width());
-
 export default {
-    
+    components:{
+      // navigation-link
+    }
 }
 </script>
 <style scoped>
 /* css reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    li {
-      list-style: none;
-    }
-
-
-/* img sizing */
-    .top-nav-right > li > a > img {
-      width: 40px;
-      height: 40px;
-    }
-    .bottom-nav > li > a > img {
-      width: 80px;
-      height: 80px;
-    }
-
-/* top nav */
-    .top-nav-left > li {
-      display: inline-block;
-    }
-    .top-nav-right > li {
-      display: inline-block;
-    }
-    .top-nav-left > li > a {
-      line-height: 60px;
-      padding: 0 30px;
-      color: rgba(0, 0, 0, 0.9);
-    }
-    .top-nav-right > li > a {
-      line-height: 60px;
-      padding: 0 30px;
-    }
-    .top-nav-left {
-      float: left;
-    }
-    .top-nav-right {
-      float: right;
-    }
-    .top-nav-left > li > .nwgj {
-      display: inline-block;
-      height: 36px;
-      color: #EC4C66;
-      font-size: 30px;
-      font-weight: 600;
-      text-decoration: none;
-    } 
-    .top-nav-left > li > .mate {
-      font-weight: 600;
-      color: rgba(0, 0, 0, 0.5);
-      text-decoration: none;
-    }
-    .top_gnb {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-      width: 100%;
-    }
-
-/* bottom nav */
-    .bottom-nav > li {
-      display: inline-block;
-    }
-    .bottom-nav > li > a {
-      line-height: 60px;
-      padding: 0 30px;
-      color: rgba(0, 0, 0, 0.9);
-      position: relative;
-      top: -10px;
-      text-decoration: none;
-    }
-    .bottom-nav > li > a > img {
-      position: relative;
-      top: -5px;
-    }
-    .bottom-nav > li > .bottom-filter {
-      padding: 0;
-    }
-    .bottom_gnb {
-      width: 100%;
-      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-      height: 59px;
-    }
-
-/* illusion: 박스가 다 어긋나서 선을 만드는데(배치하는데) 어려움이 있었음. illusion으로 선만들었음 */
-    .top-nav-left > li > .illusion {
-      width: 1px;
-      padding: 0 1px;
-      border-right: 2px solid rgba(0, 0, 0, 0.3);
-      position: relative;
-      top: -3px;
-    }
-    .bottom-nav > li > .illusion {
-      width: 1px;
-      height: 25px;
-      padding: 16px 1px;
-      border-right: 2px solid rgba(0, 0, 0, 0.3);
-      position: relative;
-    }
-
-    .nav {
-      z-index: 2000;
-      left: 0;
-      right: 0;
-      position: absolute;
-      background-color: #f8fbfe;
-    }
-
+nav {
+  padding: 10px;
+  width: 1180px;
+}
+ul {
+  list-style:none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+a {
+  color: black;
+}
+#logo-name {
+  width: 50px;
+  height: 50px;
+}
+#nav-container-left {
+  width: 330px;
+}
+#nav-cotainer-right {
+  width: 450px;
+}
 </style>
