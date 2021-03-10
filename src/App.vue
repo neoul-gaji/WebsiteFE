@@ -12,4 +12,22 @@
   color: black;
 }
 
+@font-face{
+    font-family: "GBold";
+    src: url("assets/TTF/Bold.ttf");
+    /* font-weight: bold; */
+}
+
+@font-face {
+    font-family: "GMedium";
+    src: url("assets/TTF/Medium.ttf");
+    /* font-weight: normal; */
+}
+
+@font-face {
+    font-family: "GLight";
+    src: url("assets/TTF/Light.ttf");
+    /* font-weight: light; */
+}
+
 </style>
