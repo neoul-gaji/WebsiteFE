@@ -1,5 +1,5 @@
-<template lang="">
-<div>
+<template lang="ko">
+<div class="total-page">
     <div class="nav">
         <NavBar/>
     </div>
@@ -57,8 +57,8 @@ export default {
     }
 
     .main {
-        height: 100%;
-        width: 100%;
+        /* height: 100vh;
+        width: 100vw; */
         background-color: #EFF3F6; 
         padding-top: 55px;
     }
@@ -74,7 +74,6 @@ export default {
         position: relative;
         left: -30px;
         top: -80px;
-        z-index: 1;
     }
     
     .shout > ul > li {
@@ -94,6 +93,15 @@ export default {
         -webkit-transform: rotate(3600deg);
         -moz-transform: rotate(3600deg);
         transform: rotate(3600deg);
+    }
+
+    .container {
+        position: center;
+    }
+
+    .total-page {
+        height: 100vh;
+        width: 100vw;
     }
     
 </style>
